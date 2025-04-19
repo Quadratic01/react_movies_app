@@ -1,5 +1,4 @@
-import React, { useState, useEffect } from "react";
-
+import React, { useState, useEffect } from "react"; 
 import MovieCard from "./MovieCard";
 import SearchIcon from "./search.svg";
 import "./App.css";
@@ -31,13 +30,14 @@ const App = () => {
           onChange={(e) => setSearchTerm(e.target.value)}
           placeholder="Search for movies"
         />
+
         <img
           src={SearchIcon}
           alt="search"
           onClick={() => searchMovies(searchTerm)}
         />
       </div>
-
+      
       {movies?.length > 0 ? (
         <div className="container">
           {movies.map((movie) => (
